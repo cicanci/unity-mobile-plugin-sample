@@ -10,7 +10,7 @@ public class NativeTest {
     }
 
     public String getMessage() {
-      return this.message + " " + this.counter;
+      return this.message;
     }
 
     public void setCounter(int counter) {

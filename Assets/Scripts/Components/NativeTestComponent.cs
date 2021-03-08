@@ -38,14 +38,13 @@ namespace Cicanci.NativeTest
 
         public void ResetMessageOnClick()
         {
-            _message = _nativeTest.GetMessage();
             _nativeTest.SetMessage(_message);
             _messageText.text = _message;
         }
 
         public void UpdateMessageOnClick()
         {
-            _messageText.text = _nativeTest.GetMessage();
+            _messageText.text = $"{_nativeTest.GetMessage()} {_counterText.text}";
         }
     }
 }

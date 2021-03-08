@@ -14,7 +14,7 @@ namespace Cicanci.NativeTest
 
         public string GetMessage()
         {
-            return $"{_message} {_counter}";
+            return _message;
         }
 
         public void SetCounter(int counter)
